@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.8), rgba(0,0,0,0.8)100%), url(image/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 100px;
+}
+.nav img{
+    width: 160px;
+}
+button{
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+    background-color: rgb(190, 70, 27);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+}
+.header-div{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.container1{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.container1 p{
+    font-size: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.email-signup{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.from-div{
+    width: 100%;
+    margin: 0 auto;
+}
+.email-signup input{
+    width: 300px;
+    font-size: 18px;
+    padding: 19px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    background-color: #000;
+    color: #fff;
+}
+.email-signup button{
+    background: #db0001;
+    color: #fff;
+    font-size: 16px;
+    border: 1.5px solid gray;
+    cursor: pointer;
+    padding: 20px 35px;
+}
+.features{
+    width: 100%;
+    padding: 50px 12%; 
+    background-color: rgba(0,0,0,5.9);
+    color: #fff;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    
+}
+.text-col h1{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.text-col p{
+    text-align: center;
+    font-size: 20px;
+}
+.img-col img{
+    width: 100%;
+    margin: auto;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(0,0,0,5.9);
+    color: #fff;
+    border-bottom: 2px solid gray;
+}
+.faq h2{
+    font-size:40px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 1px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    transform: transform 0.5s;
+}
+.accordion input{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input:checked + label::after{
+transform: rotate(135deg);
+}
+.faq .email-singnup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 20px;
+}
+footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,5.9);
+    color: #fff;
+}
+.foot-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 45px;
+    color: #fff;
+}
+.foot-div ul {
+    font-size: 17px;
+}
+.box  a{
+    text-decoration: none;
+    color: #fff;
+}
+.box a:hover{
+    border-bottom: 1px solid white;
+}
+@media (max-width:740px){
+    .from-div{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
